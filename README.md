@@ -19,10 +19,12 @@ terraform.ftvars: Global variables for the VPC
 
 test-env.ftvars: Variables for the test environment
 
-##To Build the 'test' environment
+## To Build the 'test' environment
 
 $terraform apply -var-file=test-env.tfvars
 
 You can also build just the resources in each file with the following commands:
+
 01-vpc.tf: terraform apply -var-file=test-env.tfvars -target=aws_nat_gateway.nat_gw
+
 02-subnets.tf: terraform apply -var-file=test-env.tfvars -target=aws_security_group.private_sg0
