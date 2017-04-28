@@ -1,0 +1,6 @@
+environment = "test"
+ingress_ip1 = "217.205.197.194"
+test_subnet0_cidrrange = ".17.0/23"
+test_subnet1_cidrrange = ".19.0/23"
+alb_endpoint = "true"
+cf_endpoint = "false"
